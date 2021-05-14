@@ -1,0 +1,29 @@
+:root {
+    /* Fonts */
+    --primary-font: 'DM Sans', sans-serif;
+    --secondary-font: 'Inter', sans-serif;
+
+
+    /* Colors */
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFE9D5;
+
+    --light-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+
+    --white: #FFFFFF;
+    --off-white: #FAF8F7;
+    --gray: #BABABA;
+    --warmer-black: #282623;
+    --warm-black: #201E1C;
+    --black: #000000;
+
+    /* Light-Theme UI */
+    --light-titles-font-color: var(--black);
+    --light-paragraph-font-color: var(--warm-black);
+    --light-background-color: var(--off-white);
+    /* Dark-Theme UI */
+    --dark-titles-font-color: var(--white);
+    --dark-paragraph-font-color: var(--off-white);
+    --dark-backgroundcolor: var(--warmer-black);
+}

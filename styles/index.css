@@ -1,0 +1,72 @@
+@import './_variables.css';
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: var(--primary-font);
+    font-size: 62.5%;
+}
+
+.index-header {
+    align-items: center;
+    background: linear-gradient(200deg, var(--warm-black) 10%, var(--bitcoin-orange) 100%);
+    display: flex;
+    flex-direction: column;
+    height: 325px;
+    justify-content: center;
+    min-width: 350px;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.index-header__logo {
+    margin-bottom: 35px;
+    max-width: 500px;
+    width: 60%;
+}
+
+.index-header__title {
+    color: var(--white);
+    font-size: 3em;
+    margin-bottom: 1vw;
+}
+
+.index-header__subtitle {
+    color: var(--soft-orange);
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+.index-header__button {
+    background-color: var(--off-white);
+    border-radius: 4px;
+    bottom: 0;
+    box-shadow: 1px 5px 8px rgba(89, 73, 30, 0.2), -1px 5px 8px rgba(89, 73, 30, 0.2);
+    color: var(--warm-black);
+    display: flex;
+    font-size: 1.8em;
+    font-weight: 900;
+    justify-content: center;
+    min-width: 275px;
+    padding: 16px;
+    position: absolute;
+    text-decoration: none;
+    text-transform: capitalize;
+    transform: translate(0, 50%);
+    width: 35%;
+}
+
+.index-header__button-icon {
+    margin-bottom: 0;
+    margin-left: 8px;
+}
+
+.index-main {
+    height: 500px;
+    width: 100%;
+}
