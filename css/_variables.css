@@ -1,0 +1,48 @@
+:root {
+    /* Fonts */
+    --primary-font: 'DM Sans', sans-serif;
+    --secondary-font: 'Inter', sans-serif;
+
+    /* Colors */
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFC47C;
+
+    --light-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+
+    --white: #FFFFFF;
+    --dark-white: #DDDDDD;
+    --light-gray: #BBBBBB;
+    --gray: #888888;
+    --dark-gray: #555555;
+    --soft-black: #333333;
+    --black: #000000;
+}
+
+/* Light-Theme UI Colors */
+[app-theme="light"] {
+    --shadow-color: rgba(40, 38, 35, 0.2);
+
+    --theme-slider-border-color: var(--gray);
+    --theme-slider-bg-color: var(--light-gray);
+
+    --header-bg-gradient: linear-gradient(200deg, var(--dark-white) 0%, var(--bitcoin-orange) 100%);
+    --header-title-color: var(--soft-black);
+    --header-subtitle-color: var(--dark-gray);
+    --header-button-bg-color: var(--dark-white);
+    --header-button-color: var(--soft-black);
+}
+
+/* Dark-Theme UI Colors */
+[app-theme="dark"] {
+    --shadow-color: rgba(255, 196, 124, 0.2);
+
+    --theme-slider-border-color: var(--bitcoin-orange);
+    --theme-slider-bg-color: var(--soft-orange);
+
+    --header-bg-gradient: linear-gradient(200deg, var(--soft-black) 0%, var(--bitcoin-orange) 100%);
+    --header-title-color: var(--white);
+    --header-subtitle-color: var(--soft-orange);
+    --header-button-bg-color: var(--soft-black);
+    --header-button-color: var(--dark-white);
+}

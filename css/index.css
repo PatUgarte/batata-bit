@@ -1,4 +1,5 @@
 @import './_variables.css';
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,48 +12,54 @@ html {
 }
 
 .index-header {
-    align-items: center;
-    background: linear-gradient(200deg, var(--warm-black) 10%, var(--bitcoin-orange) 100%);
     display: flex;
     flex-direction: column;
-    height: 325px;
+    align-items: center;
     justify-content: center;
+    background: var(--header-bg-gradient);
+    height: 325px;
     min-width: 350px;
-    padding: 5px;
+    padding: 20px 15px;
     position: relative;
     text-align: center;
     width: 100%;
 }
 
+.index-header__titles-container {
+    margin: 2vw 0;
+}
+
 .index-header__logo {
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     max-width: 500px;
     width: 60%;
 }
 
 .index-header__title {
-    color: var(--white);
+    color: var(--header-title-color);
     font-size: 3em;
-    margin-bottom: 1vw;
+    margin-bottom: 15px;
 }
 
 .index-header__subtitle {
-    color: var(--soft-orange);
+    color: var(--header-subtitle-color);
     font-size: 1.8em;
     font-weight: 500;
 }
 
 .index-header__button {
-    background-color: var(--off-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--header-button-bg-color);
     border-radius: 4px;
     bottom: 0;
-    box-shadow: 1px 5px 8px rgba(89, 73, 30, 0.2), -1px 5px 8px rgba(89, 73, 30, 0.2);
-    color: var(--warm-black);
-    display: flex;
+    box-shadow: 2.5px 5px 8px var(--shadow-color), -2.5px 5px 8px var(--shadow-color);
+    color: var(--header-button-color);
     font-size: 1.8em;
     font-weight: 900;
-    justify-content: center;
     min-width: 275px;
+    outline: none;
     padding: 16px;
     position: absolute;
     text-decoration: none;
@@ -64,9 +71,4 @@ html {
 .index-header__button-icon {
     margin-bottom: 0;
     margin-left: 8px;
-}
-
-.index-main {
-    height: 500px;
-    width: 100%;
 }

@@ -1,7 +1,80 @@
-<svg width="41" height="25" viewBox="0 0 41 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M23.6785 20.2905C30.1018 22.2884 40.4763 20.2465 40.5685 11.3487C40.6606 2.45065 29.5884 7.75108 29.5884 7.75108L23.6785 20.2905Z" fill="#FFC250"/>
-<path d="M37.4454 6.35634C32.9624 5.58791 29.5577 11.5303 25.7908 17.7291C22.0239 23.9278 12.2148 26.3848 5.94727 21.172C-0.320286 15.9591 -2.97291 6.82937 4.72262 1.38363C12.4181 -4.06212 17.222 8.30144 23.847 8.64128C30.4718 8.98113 30.5202 4.055 37.4454 6.35634Z" fill="#FFD064"/>
-<ellipse rx="1.96745" ry="1.96809" transform="matrix(-1 0 0 1 5.37188 11.6257)" fill="#FFE19D"/>
-<circle r="1.47559" transform="matrix(-1 0 0 1 9.1428 13.1012)" fill="#FFE19D"/>
-<circle r="1.14768" transform="matrix(-1 0 0 1 6.51953 15.0694)" fill="#FFE19D"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="41"
+   height="25"
+   viewBox="0 0 41 25"
+   fill="none"
+   version="1.1"
+   id="svg3779"
+   sodipodi:docname="batata.svg"
+   inkscape:version="0.92.5 (0.92.5+68)">
+  <metadata
+     id="metadata3785">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3783" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="974"
+     id="namedview3781"
+     showgrid="false"
+     inkscape:zoom="22.457711"
+     inkscape:cx="18.077076"
+     inkscape:cy="12.616637"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3779" />
+  <path
+     d="M 16.89057,20.2905 C 10.46727,22.2884 0.0927704,20.2465 5.7039691e-4,11.3487 -0.0915296,2.45065 10.98067,7.75108 10.98067,7.75108 Z"
+     id="path3769"
+     inkscape:connector-curvature="0"
+     style="fill:#ffc250" />
+  <path
+     d="m 3.1236704,6.35634 c 4.483,-0.76843 7.8876996,5.17396 11.6545996,11.37276 3.7669,6.1987 13.576,8.6557 19.84353,3.4429 C 40.889356,15.9591 43.54198,6.82937 35.84645,1.38363 28.15097,-4.06212 23.34707,8.30144 16.72207,8.64128 10.09727,8.98113 10.04887,4.055 3.1236704,6.35634 Z"
+     id="path3771"
+     inkscape:connector-curvature="0"
+     style="fill:#ffd064" />
+  <ellipse
+     rx="1.96745"
+     ry="1.9680901"
+     id="ellipse3773"
+     cx="35.197189"
+     cy="11.6257"
+     style="fill:#ffe19d" />
+  <circle
+     r="1.47559"
+     id="circle3775"
+     cx="31.42627"
+     cy="13.1012"
+     style="fill:#ffe19d" />
+  <circle
+     r="1.14768"
+     id="circle3777"
+     cx="34.049541"
+     cy="15.0694"
+     style="fill:#ffe19d" />
 </svg>
