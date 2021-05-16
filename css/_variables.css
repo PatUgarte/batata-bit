@@ -4,45 +4,61 @@
     --secondary-font: 'Inter', sans-serif;
 
     /* Colors */
-    --bitcoin-orange: #F7931A;
+    --main-orange: #F7931A;
     --soft-orange: #FFC47C;
 
     --light-blue: #1A9AF7;
-    --soft-blue: #E7F5FF;
+    --lighter-blue: #E7F5FF;
 
     --white: #FFFFFF;
-    --dark-white: #DDDDDD;
-    --light-gray: #BBBBBB;
-    --gray: #888888;
-    --dark-gray: #555555;
-    --soft-black: #333333;
+    --dark-white: #EEEEEE;
+    --light-gray: #AAAAAA;
+    --gray: #777777;
+    --dark-gray: #333333;
+    --soft-black: #111111;
     --black: #000000;
+}
+
+[app-theme="light"], [app-theme="dark"] {
+    --table-text-color: var(--gray);
+    --table-coins-title-color: var(--main-orange);
+    --table-coins-footer-bg-color: var(--soft-orange);
+    --table-commissions-title-color: var(--light-blue);         /* Sin uso aún */
+    --table-commissions-footer-bg-color: var(--lighter-blue);           /* Sin uso aún */
 }
 
 /* Light-Theme UI Colors */
 [app-theme="light"] {
-    --shadow-color: rgba(40, 38, 35, 0.2);
+    --shadow-color: rgba(40, 38, 35, 0.25);
 
-    --theme-slider-border-color: var(--gray);
-    --theme-slider-bg-color: var(--light-gray);
-
-    --header-bg-gradient: linear-gradient(200deg, var(--dark-white) 0%, var(--bitcoin-orange) 100%);
-    --header-title-color: var(--soft-black);
+    --header-bg-gradient: linear-gradient(190deg, var(--dark-white) 0%, var(--dark-white) 40%, var(--main-orange) 100%);
     --header-subtitle-color: var(--dark-gray);
-    --header-button-bg-color: var(--dark-white);
-    --header-button-color: var(--soft-black);
+
+    --primary-bg-color: var(--dark-white);
+    --secondary-bg-color: var(--soft-black);
+    --primary-title-color: var(--black);
+    --secondary-title-color: var(--white);
+    --primary-text-color: var(--dark-gray);
+    --secondary-text-color: var(--light-gray);        /* Sin uso aún */
+
+    --table-bg-color: var(--white);
+    --table-accent-color: var(--dark-gray);
 }
 
 /* Dark-Theme UI Colors */
 [app-theme="dark"] {
-    --shadow-color: rgba(255, 196, 124, 0.2);
+    --shadow-color: rgba(255, 196, 124, 0.25);
 
-    --theme-slider-border-color: var(--bitcoin-orange);
-    --theme-slider-bg-color: var(--soft-orange);
-
-    --header-bg-gradient: linear-gradient(200deg, var(--soft-black) 0%, var(--bitcoin-orange) 100%);
-    --header-title-color: var(--white);
+    --header-bg-gradient: linear-gradient(190deg, var(--soft-black) 0%, var(--soft-black) 40%, var(--main-orange) 100%);
     --header-subtitle-color: var(--soft-orange);
-    --header-button-bg-color: var(--soft-black);
-    --header-button-color: var(--dark-white);
+
+    --primary-bg-color: var(--soft-black);
+    --secondary-bg-color: var(--dark-white);
+    --primary-title-color: var(--white);
+    --secondary-title-color: var(--black);
+    --primary-text-color: var(--light-gray);
+    --secondary-text-color: var(--dark-gray);        /* Sin uso aún */
+
+    --table-bg-color: var(--black);
+    --table-accent-color: var(--soft-orange);
 }

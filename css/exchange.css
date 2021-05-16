@@ -1,0 +1,124 @@
+.main-exchange {
+    padding-top: 60px;
+}
+
+.main-exchange__bg-img {
+    margin: 0 auto;
+    max-width: 350px;
+    width: 75%;
+}
+
+.main-exchange__titles {
+    margin: 20px auto;
+    width: 85%;
+}
+
+.main-exchange__titles h2 {
+    color: var(--primary-title-color);
+    margin-bottom: 15px;
+    font-size: 2.4em;
+    font-weight: 700;
+}
+
+.main-exchange__titles p {
+    color: var(--primary-text-color);
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main-exchange__table-container {
+    display: grid;
+    grid-template-columns: 20px auto 20px;
+
+    margin: auto;
+    min-width: 275px;
+    width: 40%;
+}
+
+.main-exchange__table-arrow {
+    align-self: center;
+    color: var(--table-accent-color);
+    font-size: 2em;
+    text-align: center;
+}
+
+.main-exchange__table-arrow::before {
+    cursor: pointer;
+}
+
+.main-exchange__table {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    grid-template-rows: repeat(5, 40px);
+    grid-gap: 3px;
+    grid-template-areas: "header header";
+
+    background-color: var(--primary-bg-color);
+    border-radius: 20px;
+    font-family: var(--secondary-font);
+    height: auto;
+    margin: 0 15px 20px;
+    overflow: hidden;
+}
+
+.main-exchange__table div {
+    background-color: var(--table-bg-color);
+}
+
+.main-exchange__table-header,
+.main-exchange__table--first-column,
+.main-exchange__table--second-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.main-exchange__table-header {
+    color: var(--table-coins-title-color);
+    font-family: var(--primary-font);
+    font-size: 1.8em;
+    font-weight: 700;
+    grid-area: header;
+}
+
+.main-exchange__table--first-column {
+    color: var(--table-text-color);
+    font-size: 1.6em;
+    font-weight: 500;
+    justify-content: start;
+}
+
+.main-exchange__table--second-column {
+    color: var(--table-accent-color);
+    font-weight: 700;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.main-exchange__table img {
+    height: 75%;
+    margin-left: 10px;
+}
+
+.main-exchange__table-footer {
+    background-color: var(--table-coins-footer-bg-color);
+    border-radius: 7.5px;
+    font-size: 1.3em;
+    margin: auto;
+    padding: 5px 15px;
+    position: relative;
+    width: max-content;
+}
+
+@keyframes vertical-translate {
+    100% {
+        transform: translateY(8px);
+    }
+}
+
+@keyframes border-color {
+    100% {
+        border-color: var(--header-subtitle-color);
+    }
+}

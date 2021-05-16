@@ -1,0 +1,73 @@
+.index-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--header-bg-gradient);
+    height: 325px;
+    padding: 20px 15px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.index-header__titles-container {
+    margin: 2vw 0;
+}
+
+.index-header__logo {
+    margin: 0 0 .5vw;
+    max-width: 500px;
+    width: 60%;
+}
+
+.index-header__title {
+    color: var(--primary-title-color);
+    font-size: 3em;
+    margin-bottom: 1vw;
+}
+
+.index-header__subtitle {
+    color: var(--header-subtitle-color);
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+.index-header__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-bg-color);
+    border: 6px var(--secondary-bg-color) solid;
+    border-radius: 15px;
+    bottom: 0;
+    box-shadow: 2px 5px 10px 4px var(--shadow-color), -2px 5px 10px 4px var(--shadow-color);
+    color: var(--secondary-title-color);
+    font-size: 1.8em;
+    font-weight: 900;
+    height: 10vw;
+    max-height: 75px;
+    min-height: 55px;
+    min-width: 290px;
+    outline: none;
+    padding: 0 16px;
+    position: absolute;
+    text-decoration: none;
+    text-transform: capitalize;
+    transform: translate(0, 50%);
+    width: calc(100% / 3);
+}
+
+.index-header__button-icon {
+    margin-left: 16px;
+}
+
+.index-header__button:hover {
+    animation: border-color .8s ease forwards;
+}
+
+.index-header__button:hover .index-header__button-icon {
+    position: relative;
+    top: -4px;
+    animation: vertical-translate .8s ease infinite;
+}

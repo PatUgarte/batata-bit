@@ -6,11 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/slider.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
@@ -21,27 +20,69 @@
 <body>
     <header class="index-header">
         <div class="theme-switch-wrapper">
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
+            <label class="theme-switch" for="theme-switch-input">
+                <input type="checkbox" id="theme-switch-input" />
                 <div class="slider round"></div>
             </label>
         </div>
         <img class="index-header__logo" src="./assets/img/logo-header.svg" alt="Batabit Logo" />
         <div class="index-header__titles-container">
             <h1 class="index-header__title">La próxima revolución en el intercambio de criptomonedas.</h1>
-            <p class="index-header__subtitle">Batatabit te ayuda a navegar entre los diferentes precios y tendencias.
+            <p class="index-header__subtitle">
+                Batatabit te ayuda a navegar entre los diferentes precios y tendencias.
             </p>
         </div>
-        <a class="index-header__button" href="#">Conoce nuestros planes<i
-                class="fas fa-chevron-down index-header__button-icon"></i></a>
+        <a class="index-header__button" href="#">
+            Conoce nuestros planes
+            <i class="fas fa-chevron-down index-header__button-icon"></i>
+        </a>
     </header>
     <main class="index-main">
-        <section id="" class="index-main-section"></section>
+        <section id="exchange" class="index-main-section main-exchange">
+            <img class="main-exchange__bg-img" src="./assets/img/bitcoin.svg" alt="">
+            <div class="main-exchange__titles">
+                <h2>Visibilizamos todas las tasas de cambio.</h2>
+                <p>
+                    Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.
+                </p>
+            </div>
+            <section class="main-exchange__table-container">
+                <i id="table-left-arrow" class="fas fa-chevron-left main-exchange__table-arrow"></i>
+                <div class="main-exchange__table">
+                    <div class="main-exchange__table-header">Monedas</div>
+                    <div class="main-exchange__table--first-column">Bitcoin</div>
+                    <div class="main-exchange__table--second-column">
+                        $ 1.96
+                        <img src="./assets/icons/trending-down.svg" alt="Trending Down">
+                    </div>
+                    <div class="main-exchange__table--first-column">Ethereum</div>
+                    <div class="main-exchange__table--second-column">
+                        $ 0.07
+                        <img src="./assets/icons/trending-up.svg" alt="Trending Up">
+                    </div>
+                    <div class="main-exchange__table--first-column">Ripple</div>
+                    <div class="main-exchange__table--second-column">
+                        $ 2.15
+                        <img src="./assets/icons/trending-down.svg" alt="Trending Down">
+                    </div>
+                    <div class="main-exchange__table--first-column">Stellar</div>
+                    <div class="main-exchange__table--second-column">
+                        $ 4.96
+                        <img src="./assets/icons/trending-down.svg" alt="Trending Down">
+                    </div>
+                </div>
+                <i id="table-right-arrow" class="fas fa-chevron-right main-exchange__table-arrow"></i>
+            </section>
+            <div class="main-exchange__table-footer">
+                <strong>Actualizado:</strong> 19 Julio 23:45
+            </div>
+        </section>
         <section id="" class="index-main-section"></section>
         <section id="" class="index-main-section"></section>
         <section id="" class="index-main-section"></section>
     </main>
     <footer class="index-footer">
+
 
     </footer>
     <script src="./js/index.js" />
