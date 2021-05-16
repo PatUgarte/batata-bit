@@ -10,9 +10,25 @@ const switchTheme = (e) => {
 
 toggleSwitch.addEventListener("change", switchTheme, false);
 
+/* ---------------------------------------------------------------------- */
+
 const leftArrow = document.querySelector("#table-left-arrow");
 const rightArrow = document.querySelector("#table-right-arrow");
 
+const tableHeader = document.querySelector(".main-exchange__table-header");
+const tableFooter = document.querySelector(".main-exchange__table-footer");
+
+const leftColumns = document.querySelectorAll(
+  ".main-exchange__table--first-column"
+);
+const rightColumnValues = document.querySelectorAll(
+  ".main-exchange__table--second-column span"
+);
+const rightColumnTrends = document.querySelectorAll(
+  ".main-exchange__table--second-column img"
+);
+
+let tableIndex = 0;
 const tableData = [
   {
     type: "Monedas",
@@ -35,3 +51,43 @@ const tableData = [
     updatedAt: "19 Julio 23:48",
   },
 ];
+
+leftArrow.style.visibility = "hidden";
+
+const handleTableChange = (change) => {
+  tableIndex += change;
+  const currentData = tableData[tableIndex];
+
+  tableHeader.innerHTML = currentData.type;
+  leftColumns.forEach((leftContent, index) => {
+    leftContent.innerHTML = currentData.data[index].name;
+  });
+  rightColumnValues.forEach((rightContent, index) => {
+    rightContent.innerHTML = `$ ${currentData.data[index].value}`;
+  });
+  tableFooter.innerHTML = `<b>Actualizado:</b> ${currentData.updatedAt}`;
+
+  if (tableIndex === 0) {
+    leftArrow.style.visibility = "hidden";
+    tableHeader.classList.replace("commission-header", "currency-header");
+    rightColumnTrends.forEach((img) => {
+      img.style.visibility = "visible";
+    });
+    tableFooter.classList.replace("commission-footer", "currency-footer");
+    rightArrow.style.visibility = "visible";
+  } else if (tableIndex === tableData.length - 1) {
+    leftArrow.style.visibility = "visible";
+    tableHeader.classList.replace("currency-header", "commission-header");
+    rightColumnTrends.forEach((img) => {
+      img.style.visibility = "collapse";
+    });
+    tableFooter.classList.replace("currency-footer", "commission-footer");
+    rightArrow.style.visibility = "hidden";
+  } else {
+    leftArrow.style.visibility = "visible";
+    rightArrow.style.visibility = "visible";
+  }
+};
+
+leftArrow.addEventListener("click", () => handleTableChange(-1));
+rightArrow.addEventListener("click", () => handleTableChange(1));

@@ -1,5 +1,5 @@
-.main-exchange {
-    padding-top: 60px;
+#exchange {
+    padding-top: 75px;
 }
 
 .main-exchange__bg-img {
@@ -75,11 +75,18 @@
 }
 
 .main-exchange__table-header {
-    color: var(--table-coins-title-color);
     font-family: var(--primary-font);
     font-size: 1.8em;
     font-weight: 700;
     grid-area: header;
+}
+
+.currency-header {
+    color: var(--table-currency-title-color);
+}
+
+.commission-header {
+    color: var(--table-commission-title-color);
 }
 
 .main-exchange__table--first-column {
@@ -102,13 +109,20 @@
 }
 
 .main-exchange__table-footer {
-    background-color: var(--table-coins-footer-bg-color);
     border-radius: 7.5px;
     font-size: 1.3em;
     margin: auto;
     padding: 5px 15px;
     position: relative;
     width: max-content;
+}
+
+.currency-footer {
+    background-color: var(--table-currency-footer-bg-color);
+}
+
+.commission-footer {
+    background-color: var(--table-commission-footer-bg-color);
 }
 
 @keyframes vertical-translate {

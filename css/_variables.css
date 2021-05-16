@@ -6,25 +6,25 @@
     /* Colors */
     --main-orange: #F7931A;
     --soft-orange: #FFC47C;
-
-    --light-blue: #1A9AF7;
-    --lighter-blue: #E7F5FF;
+    --main-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
 
     --white: #FFFFFF;
     --dark-white: #EEEEEE;
-    --light-gray: #AAAAAA;
+    --soft-gray: #AAAAAA;
     --gray: #777777;
     --dark-gray: #333333;
     --soft-black: #111111;
     --black: #000000;
 }
 
+/* Both-Themes UI Colors */
 [app-theme="light"], [app-theme="dark"] {
     --table-text-color: var(--gray);
-    --table-coins-title-color: var(--main-orange);
-    --table-coins-footer-bg-color: var(--soft-orange);
-    --table-commissions-title-color: var(--light-blue);         /* Sin uso aún */
-    --table-commissions-footer-bg-color: var(--lighter-blue);           /* Sin uso aún */
+    --table-currency-title-color: var(--main-orange);
+    --table-currency-footer-bg-color: var(--soft-orange);
+    --table-commission-title-color: var(--main-blue);         /* Sin uso aún */
+    --table-commission-footer-bg-color: var(--soft-blue);           /* Sin uso aún */
 }
 
 /* Light-Theme UI Colors */
@@ -39,7 +39,7 @@
     --primary-title-color: var(--black);
     --secondary-title-color: var(--white);
     --primary-text-color: var(--dark-gray);
-    --secondary-text-color: var(--light-gray);        /* Sin uso aún */
+    --secondary-text-color: var(--soft-gray);        /* Sin uso aún */
 
     --table-bg-color: var(--white);
     --table-accent-color: var(--dark-gray);
@@ -56,7 +56,7 @@
     --secondary-bg-color: var(--dark-white);
     --primary-title-color: var(--white);
     --secondary-title-color: var(--black);
-    --primary-text-color: var(--light-gray);
+    --primary-text-color: var(--soft-gray);
     --secondary-text-color: var(--dark-gray);        /* Sin uso aún */
 
     --table-bg-color: var(--black);
