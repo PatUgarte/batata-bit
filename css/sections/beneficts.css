@@ -1,19 +1,32 @@
 #beneficts {
     background-color: var(--secondary-bg-color);
-    background-image: url("../../assets/img/tech-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
     color: var(--secondary-text-color);
-    padding-bottom: 0;
     position: relative;
+}
+
+#beneficts::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    background: url("../../assets/img/tech-bg.png");
+    background-size: cover;
+    content: "";
+    opacity: var(--benefict-bg-opacity);
+    z-index: 1;
 }
 
 .beneficts-separator {
     position: absolute;
-    left: 50%;
-    right: 50%;
     top: 0;
     transform: translate(-50%, -50%);
+}
+
+.beneficts__titles {
+    position: relative;
+    z-index: 2;
 }
 
 #beneficts .beneficts__titles h2 {
@@ -26,13 +39,14 @@
 
 .beneficts-card-container {
     padding: 20px 0;
+    position: relative;
+    z-index: 2;
 }
 
 .beneficts-card {
     display: flex;
     flex-direction: column;
     align-items: start;
-
     background-color: var(--primary-text-color);
     border-radius: 15px;
     height: auto;

@@ -32,7 +32,7 @@
                 Batatabit te ayuda a navegar entre los diferentes precios y tendencias.
             </p>
         </div>
-        <a class="header__button" href="#">
+        <a class="header__button" href="#plans">
             Conoce nuestros planes
             <i class="fas fa-chevron-down header__button-icon"></i>
         </a>
@@ -46,35 +46,40 @@
                     Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.
                 </p>
             </div>
-            <section class="exchange__table-container">
-                <i id="table-left-arrow" class="fas fa-chevron-left exchange__table-arrow"></i>
-                <div class="exchange__table">
-                    <div class="exchange__table-header exchange__table-header--currency">Monedas</div>
-                    <div class="exchange__table--first-column">Bitcoin</div>
-                    <div class="exchange__table--second-column">
-                        <span>$ 1.96</span>
-                        <img src="./assets/icons/trending-down.svg" alt="Trending Down">
+            <section class="exchange-table__container">
+                <i id="table-left-arrow" class="fas fa-chevron-left exchange-table__arrow"></i>
+                <div class="exchange-table">
+                    <div id="exchange-table__header" class="exchange-table__header--currency">Monedas</div>
+                    <div class="exchange-table__first-column">Bitcoin</div>
+                    <div class="exchange-table__second-column">
+                        $&nbsp<span class="exchange-table__second-column--value">1.96</span>
+                        <img class="exchange-table__second-column--icon" src="./assets/icons/trending-down.svg"
+                            alt="Trending Down">
                     </div>
-                    <div class="exchange__table--first-column">Ethereum</div>
-                    <div class="exchange__table--second-column">
-                        <span>$ 0.07</span>
-                        <img src="./assets/icons/trending-up.svg" alt="Trending Up">
+                    <div class="exchange-table__first-column">Ethereum</div>
+                    <div class="exchange-table__second-column">
+                        $&nbsp<span class="exchange-table__second-column--value">0.07</span>
+                        <img class="exchange-table__second-column--icon" src="./assets/icons/trending-up.svg"
+                            alt="Trending Up">
                     </div>
-                    <div class="exchange__table--first-column">Ripple</div>
-                    <div class="exchange__table--second-column">
-                        <span>$ 2.15</span>
-                        <img src="./assets/icons/trending-down.svg" alt="Trending Down">
+                    <div class="exchange-table__first-column">Ripple</div>
+                    <div class="exchange-table__second-column">
+                        $&nbsp<span class="exchange-table__second-column--value">2.15</span>
+                        <img class="exchange-table__second-column--icon" src="./assets/icons/trending-down.svg"
+                            alt="Trending Down">
                     </div>
-                    <div class="exchange__table--first-column">Stellar</div>
-                    <div class="exchange__table--second-column">
-                        <span>$ 4.96</span>
-                        <img src="./assets/icons/trending-down.svg" alt="Trending Down">
+                    <div class="exchange-table__first-column">Stellar</div>
+                    <div class="exchange-table__second-column">
+                        $&nbsp<span class="exchange-table__second-column--value">4.96</span>
+                        <img class="exchange-table__second-column--icon" src="./assets/icons/trending-down.svg"
+                            alt="Trending Down">
                     </div>
                 </div>
-                <i id="table-right-arrow" class="fas fa-chevron-right exchange__table-arrow"></i>
+                <i id="table-right-arrow" class="fas fa-chevron-right exchange-table__arrow"></i>
             </section>
-            <div class="exchange__table-footer exchange__table-footer--currency">
-                <b>Actualizado:</b> 19 Julio 23:45
+            <div id="exchange-table__footer" class="exchange-table__footer--currency">
+                <b>Actualizado:</b>
+                <span id="exchange-table__footer-value">19 Julio 23:45</span>
             </div>
         </section>
         <section id="beneficts" class="main-section">
@@ -121,12 +126,11 @@
             </div>
             <img src="" alt="" srcset="">
         </section>
-        <section id="" class="main-section"></section>
-        <section id="" class="main-section"></section>
+        <section id="plans" class="main-section">
+
+        </section>
     </main>
     <footer class="index-footer">
-
-
     </footer>
     <script src="./js/index.js" />
 </body>

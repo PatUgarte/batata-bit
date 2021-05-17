@@ -4,7 +4,7 @@
     position: fixed;
     right: 15px;
     top: 15px;
-    z-index: 1;
+    z-index: 10;
 }
 
 .theme-switch {
@@ -19,8 +19,8 @@
 }
 
 .slider {
-    background-color: var(--primary-bg-color);
-    border: 2px var(--header-subtitle-color) solid;
+    /* background-color: var(--primary-bg-color); */
+    border: 2px var(--slider-border-color) solid;
     bottom: 0;
     cursor: pointer;
     left: 0;

@@ -15,16 +15,12 @@ toggleSwitch.addEventListener("change", switchTheme, false);
 const leftArrow = document.querySelector("#table-left-arrow");
 const rightArrow = document.querySelector("#table-right-arrow");
 
-const tableHeader = document.querySelector(".exchange__table-header");
-const tableFooter = document.querySelector(".exchange__table-footer");
-
-const leftColumns = document.querySelectorAll(".exchange__table--first-column");
-const rightColumnValues = document.querySelectorAll(
-  ".exchange__table--second-column span"
-);
-const rightColumnTrends = document.querySelectorAll(
-  ".exchange__table--second-column img"
-);
+const tableHeaderValue = document.querySelector("#exchange-table__header");
+const leftColumnValues = document.querySelectorAll(".exchange-table__first-column");
+const rightColumnValues = document.querySelectorAll(".exchange-table__second-column--value");
+const rightColumnIcons = document.querySelectorAll(".exchange-table__second-column--icon");
+const tableFooter = document.querySelector("#exchange-table__footer");
+const tableFooterValue = document.querySelector("#exchange-table__footer-value");
 
 let tableIndex = 0;
 const tableData = [
@@ -56,41 +52,41 @@ const handleTableChange = (change) => {
   tableIndex += change;
   const currentData = tableData[tableIndex];
 
-  tableHeader.innerHTML = currentData.type;
-  leftColumns.forEach((leftContent, index) => {
+  tableHeaderValue.innerHTML = currentData.type;
+  leftColumnValues.forEach((leftContent, index) => {
     leftContent.innerHTML = currentData.data[index].name;
   });
   rightColumnValues.forEach((rightContent, index) => {
-    rightContent.innerHTML = `$ ${currentData.data[index].value}`;
+    rightContent.innerHTML = currentData.data[index].value;
   });
-  tableFooter.innerHTML = `<b>Actualizado:</b> ${currentData.updatedAt}`;
+  tableFooterValue.innerHTML = currentData.updatedAt;
 
   if (tableIndex === 0) {
     leftArrow.style.visibility = "hidden";
-    tableHeader.classList.replace(
-      "exchange__table-header--commission",
-      "exchange__table-header--currency"
+    tableHeaderValue.classList.replace(
+      "exchange-table__header--commission",
+      "exchange-table__header--currency"
     );
-    rightColumnTrends.forEach((img) => {
+    rightColumnIcons.forEach((img) => {
       img.style.visibility = "visible";
     });
     tableFooter.classList.replace(
-      "exchange__table-footer--commission",
-      "exchange__table-footer--currency"
+      "exchange-table__footer--commission",
+      "exchange-table__footer--currency"
     );
     rightArrow.style.visibility = "visible";
   } else if (tableIndex === tableData.length - 1) {
     leftArrow.style.visibility = "visible";
-    tableHeader.classList.replace(
-      "exchange__table-header--currency",
-      "exchange__table-header--commission"
+    tableHeaderValue.classList.replace(
+      "exchange-table__header--currency",
+      "exchange-table__header--commission"
     );
-    rightColumnTrends.forEach((img) => {
+    rightColumnIcons.forEach((img) => {
       img.style.visibility = "collapse";
     });
     tableFooter.classList.replace(
-      "exchange__table-footer--currency",
-      "exchange__table-footer--commission"
+      "exchange-table__footer--currency",
+      "exchange-table__footer--commission"
     );
     rightArrow.style.visibility = "hidden";
   } else {
@@ -101,5 +97,3 @@ const handleTableChange = (change) => {
 
 leftArrow.addEventListener("click", () => handleTableChange(-1));
 rightArrow.addEventListener("click", () => handleTableChange(1));
-
-/* ---------------------------------------------------------------------- */

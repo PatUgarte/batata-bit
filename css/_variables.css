@@ -12,7 +12,7 @@
     --white: #FFFFFF;
     --dark-white: #EEEEEE;
     --soft-gray: #DDDDDD;
-    --gray: #888888;
+    --gray: #989898;
     --dark-gray: #222222;
     --soft-black: #111111;
     --black: #000000;
@@ -20,7 +20,7 @@
 
 /* Both-Themes UI Colors */
 [app-theme="light"], [app-theme="dark"] {
-    --table-text-color: var(--gray);
+    --neutral-accent-color: var(--gray);
     --table-currency-title-color: var(--main-orange);
     --table-currency-footer-bg-color: var(--soft-orange);
     --table-commission-title-color: var(--main-blue);
@@ -29,10 +29,9 @@
 
 /* Light-Theme UI Colors */
 [app-theme="light"] {
-    --shadow-color: rgba(40, 38, 35, 0.25);
-
+    --slider-border-color: var(--main-blue);
     --header-bg-gradient: linear-gradient(190deg, var(--dark-white) 0%, var(--dark-white) 40%, var(--main-orange) 100%);
-    --header-subtitle-color: var(--dark-gray);
+    --shadow-color: rgba(40, 38, 35, 0.25);
 
     --primary-bg-color: var(--dark-white);
     --secondary-bg-color: var(--soft-black);
@@ -40,17 +39,17 @@
     --secondary-title-color: var(--white);
     --primary-text-color: var(--dark-gray);
     --secondary-text-color: var(--soft-gray);
+    --accent-color: var(--dark-gray);
 
     --table-bg-color: var(--white);
-    --table-accent-color: var(--dark-gray);
+    --benefict-bg-opacity: 0.2;
 }
 
 /* Dark-Theme UI Colors */
 [app-theme="dark"] {
-    --shadow-color: rgba(255, 196, 124, 0.25);
-
+    --slider-border-color: var(--main-orange);
     --header-bg-gradient: linear-gradient(190deg, var(--soft-black) 0%, var(--soft-black) 40%, var(--main-orange) 100%);
-    --header-subtitle-color: var(--soft-orange);
+    --shadow-color: rgba(255, 196, 124, 0.25);
 
     --primary-bg-color: var(--soft-black);
     --secondary-bg-color: var(--dark-white);
@@ -58,7 +57,8 @@
     --secondary-title-color: var(--black);
     --primary-text-color: var(--soft-gray);
     --secondary-text-color: var(--dark-gray);
+    --accent-color: var(--soft-orange);
 
     --table-bg-color: var(--black);
-    --table-accent-color: var(--soft-orange);
+    --benefict-bg-opacity: 1;
 }

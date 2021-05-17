@@ -4,7 +4,7 @@
     width: 75%;
 }
 
-.exchange__table-container {
+.exchange-table__container {
     display: grid;
     grid-template-columns: 20px auto 20px;
 
@@ -13,18 +13,18 @@
     width: 40%;
 }
 
-.exchange__table-arrow {
+.exchange-table__arrow {
     align-self: center;
-    color: var(--table-accent-color);
+    color: var(--accent-color);
     font-size: 2rem;
     text-align: center;
 }
 
-.exchange__table-arrow::before {
+.exchange-table__arrow::before {
     cursor: pointer;
 }
 
-.exchange__table {
+.exchange-table {
     display: grid;
     grid-template-columns: 3fr 7fr;
     grid-template-rows: repeat(5, 40px);
@@ -39,52 +39,52 @@
     overflow: hidden;
 }
 
-.exchange__table div {
+.exchange-table div {
     background-color: var(--table-bg-color);
 }
 
-.exchange__table-header,
-.exchange__table--first-column,
-.exchange__table--second-column {
+#exchange-table__header,
+.exchange-table__first-column,
+.exchange-table__second-column {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 10px;
 }
 
-.exchange__table-header {
+#exchange-table__header {
     font-family: var(--primary-font);
     font-size: 1.8rem;
     font-weight: 700;
     grid-area: header;
 }
-.exchange__table-header--currency {
+.exchange-table__header--currency {
     color: var(--table-currency-title-color);
 }
-.exchange__table-header--commission {
+.exchange-table__header--commission {
     color: var(--table-commission-title-color);
 }
 
-.exchange__table--first-column {
-    color: var(--table-text-color);
+.exchange-table__first-column {
+    color: var(--neutral-accent-color);
     font-size: 1.6rem;
     font-weight: 500;
     justify-content: start;
 }
 
-.exchange__table--second-column {
-    color: var(--table-accent-color);
+.exchange-table__second-column {
+    color: var(--accent-color);
     font-weight: 700;
     font-size: 1.4rem;
     text-align: center;
 }
 
-.exchange__table img {
+.exchange-table img {
     height: 75%;
     margin-left: 10px;
 }
 
-.exchange__table-footer {
+#exchange-table__footer {
     border-radius: 7.5px;
     font-size: 1.3rem;
     margin: auto;
@@ -92,21 +92,9 @@
     position: relative;
     width: max-content;
 }
-.exchange__table-footer--currency {
+.exchange-table__footer--currency {
     background-color: var(--table-currency-footer-bg-color);
 }
-.exchange__table-footer--commission {
+.exchange-table__footer--commission {
     background-color: var(--table-commission-footer-bg-color);
-}
-
-@keyframes vertical-translate {
-    100% {
-        transform: translateY(8px);
-    }
-}
-
-@keyframes border-color {
-    100% {
-        border-color: var(--header-subtitle-color);
-    }
 }
