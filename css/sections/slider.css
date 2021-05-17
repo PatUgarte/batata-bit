@@ -31,7 +31,7 @@
 }
 
 .slider:before {
-    background: url('../assets/icons/sun-icon.svg');
+    background: url('../../assets/icons/sun-icon.svg');
     background-size: cover;
     bottom: 1px;
     content: "";
@@ -43,7 +43,7 @@
 }
 
 input:checked+.slider:before {
-    background: url('../assets/icons/moon-icon.svg');
+    background: url('../../assets/icons/moon-icon.svg');
     background-size: cover;
     transform: translateX(16px);
 }

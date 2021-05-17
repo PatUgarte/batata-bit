@@ -7,13 +7,13 @@
     --main-orange: #F7931A;
     --soft-orange: #FFC47C;
     --main-blue: #1A9AF7;
-    --soft-blue: #E7F5FF;
+    --soft-blue: #C5D4EE;
 
     --white: #FFFFFF;
     --dark-white: #EEEEEE;
-    --soft-gray: #AAAAAA;
-    --gray: #777777;
-    --dark-gray: #333333;
+    --soft-gray: #DDDDDD;
+    --gray: #888888;
+    --dark-gray: #222222;
     --soft-black: #111111;
     --black: #000000;
 }
@@ -23,8 +23,8 @@
     --table-text-color: var(--gray);
     --table-currency-title-color: var(--main-orange);
     --table-currency-footer-bg-color: var(--soft-orange);
-    --table-commission-title-color: var(--main-blue);         /* Sin uso aún */
-    --table-commission-footer-bg-color: var(--soft-blue);           /* Sin uso aún */
+    --table-commission-title-color: var(--main-blue);
+    --table-commission-footer-bg-color: var(--soft-blue);
 }
 
 /* Light-Theme UI Colors */
@@ -39,7 +39,7 @@
     --primary-title-color: var(--black);
     --secondary-title-color: var(--white);
     --primary-text-color: var(--dark-gray);
-    --secondary-text-color: var(--soft-gray);        /* Sin uso aún */
+    --secondary-text-color: var(--soft-gray);
 
     --table-bg-color: var(--white);
     --table-accent-color: var(--dark-gray);
@@ -57,7 +57,7 @@
     --primary-title-color: var(--white);
     --secondary-title-color: var(--black);
     --primary-text-color: var(--soft-gray);
-    --secondary-text-color: var(--dark-gray);        /* Sin uso aún */
+    --secondary-text-color: var(--dark-gray);
 
     --table-bg-color: var(--black);
     --table-accent-color: var(--soft-orange);

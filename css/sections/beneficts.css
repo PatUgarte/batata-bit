@@ -1,0 +1,63 @@
+#beneficts {
+    background-color: var(--secondary-bg-color);
+    background-image: url("../../assets/img/tech-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--secondary-text-color);
+    padding-bottom: 0;
+    position: relative;
+}
+
+.beneficts-separator {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+}
+
+#beneficts .beneficts__titles h2 {
+    color: var(--secondary-title-color);
+}
+
+#beneficts .beneficts__titles p {
+    color: var(--secondary-text-color);
+}
+
+.beneficts-card-container {
+    padding: 20px 0;
+}
+
+.beneficts-card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    background-color: var(--primary-text-color);
+    border-radius: 15px;
+    height: auto;
+    margin: 10px auto 30px;
+    max-height: 150px;
+    max-width: 600px;
+    min-width: 300px;
+    padding: 15px 20px;
+    width: 35%;
+}
+
+.beneficts-card__icon {
+    height: 22px;
+    width: 22px;
+}
+
+.beneficts-card__title {
+    color: var(--secondary-title-color);
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.beneficts-card__text {
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-align: justify;
+}

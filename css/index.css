@@ -1,7 +1,8 @@
 @import './_variables.css';
-@import './slider.css';
-@import './header.css';
-@import './exchange.css';
+@import './sections/slider.css';
+@import './sections/header.css';
+@import './sections/exchange.css';
+@import './sections/beneficts.css';
 
 * {
     box-sizing: border-box;
@@ -15,12 +16,30 @@ html {
     min-width: 320px;
 }
 
-.index-main {
+.main {
     background-color: var(--primary-bg-color);
     text-align: center;
     width: 100%;
 }
 
-.index-main-section {
-    padding: 40px 0;
+.main-section {
+    padding: 100px 0;
+}
+
+.main-section__titles {
+    margin: 20px auto;
+    width: 85%;
+}
+
+.main-section__titles h2 {
+    color: var(--primary-title-color);
+    margin-bottom: 15px;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.main-section__titles p {
+    color: var(--primary-text-color);
+    font-size: 1.4rem;
+    font-weight: 500;
 }

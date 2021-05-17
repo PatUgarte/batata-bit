@@ -15,17 +15,15 @@ toggleSwitch.addEventListener("change", switchTheme, false);
 const leftArrow = document.querySelector("#table-left-arrow");
 const rightArrow = document.querySelector("#table-right-arrow");
 
-const tableHeader = document.querySelector(".main-exchange__table-header");
-const tableFooter = document.querySelector(".main-exchange__table-footer");
+const tableHeader = document.querySelector(".exchange__table-header");
+const tableFooter = document.querySelector(".exchange__table-footer");
 
-const leftColumns = document.querySelectorAll(
-  ".main-exchange__table--first-column"
-);
+const leftColumns = document.querySelectorAll(".exchange__table--first-column");
 const rightColumnValues = document.querySelectorAll(
-  ".main-exchange__table--second-column span"
+  ".exchange__table--second-column span"
 );
 const rightColumnTrends = document.querySelectorAll(
-  ".main-exchange__table--second-column img"
+  ".exchange__table--second-column img"
 );
 
 let tableIndex = 0;
@@ -69,19 +67,31 @@ const handleTableChange = (change) => {
 
   if (tableIndex === 0) {
     leftArrow.style.visibility = "hidden";
-    tableHeader.classList.replace("commission-header", "currency-header");
+    tableHeader.classList.replace(
+      "exchange__table-header--commission",
+      "exchange__table-header--currency"
+    );
     rightColumnTrends.forEach((img) => {
       img.style.visibility = "visible";
     });
-    tableFooter.classList.replace("commission-footer", "currency-footer");
+    tableFooter.classList.replace(
+      "exchange__table-footer--commission",
+      "exchange__table-footer--currency"
+    );
     rightArrow.style.visibility = "visible";
   } else if (tableIndex === tableData.length - 1) {
     leftArrow.style.visibility = "visible";
-    tableHeader.classList.replace("currency-header", "commission-header");
+    tableHeader.classList.replace(
+      "exchange__table-header--currency",
+      "exchange__table-header--commission"
+    );
     rightColumnTrends.forEach((img) => {
       img.style.visibility = "collapse";
     });
-    tableFooter.classList.replace("currency-footer", "commission-footer");
+    tableFooter.classList.replace(
+      "exchange__table-footer--currency",
+      "exchange__table-footer--commission"
+    );
     rightArrow.style.visibility = "hidden";
   } else {
     leftArrow.style.visibility = "visible";
@@ -91,3 +101,5 @@ const handleTableChange = (change) => {
 
 leftArrow.addEventListener("click", () => handleTableChange(-1));
 rightArrow.addEventListener("click", () => handleTableChange(1));
+
+/* ---------------------------------------------------------------------- */
