@@ -19,8 +19,7 @@
 }
 
 .slider {
-    /* background-color: var(--primary-bg-color); */
-    border: 2px var(--slider-border-color) solid;
+    border: 2px var(--border-color) solid;
     bottom: 0;
     cursor: pointer;
     left: 0;

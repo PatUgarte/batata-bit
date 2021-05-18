@@ -3,17 +3,30 @@
 @import './sections/header.css';
 @import './sections/exchange.css';
 @import './sections/beneficts.css';
+@import './sections/plans.css';
+@import './sections/footer.css';
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 html {
     font-family: var(--primary-font);
     font-size: 62.5%;
     min-width: 320px;
+}
+
+a {
+    color: inherit;
+    outline: none;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
 }
 
 .main {
@@ -23,22 +36,22 @@ html {
 }
 
 .main-section {
-    padding: 100px 0;
+    padding: 80px 0;
 }
 
-.main-section__titles {
+.section__titles {
     margin: 20px auto;
     width: 85%;
 }
 
-.main-section__titles h2 {
+.section__titles h2 {
     color: var(--primary-title-color);
     margin-bottom: 15px;
     font-size: 2.4rem;
     font-weight: 700;
 }
 
-.main-section__titles p {
+.section__titles p {
     color: var(--primary-text-color);
     font-size: 1.4rem;
     font-weight: 500;

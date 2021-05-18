@@ -29,7 +29,7 @@
 }
 
 .header__subtitle {
-    color: var(--accent-color);
+    color: var(--primary-text-color);
     font-size: 1.8rem;
     font-weight: 500;
 }
@@ -39,22 +39,20 @@
     align-items: center;
     justify-content: center;
 
-    background-color: var(--secondary-bg-color);
-    border: 6px var(--secondary-bg-color) solid;
+    background-color: var(--button-bg-color);
+    border: 6px var(--button-bg-color) solid;
     border-radius: 15px;
     bottom: 0;
     box-shadow: 2px 5px 10px 4px var(--shadow-color), -2px 5px 10px 4px var(--shadow-color);
-    color: var(--secondary-title-color);
+    color: var(--contrast-color);
     font-size: 1.8rem;
     font-weight: 900;
     height: 10vw;
     max-height: 75px;
     min-height: 55px;
     min-width: 290px;
-    outline: none;
     padding: 0 16px;
     position: absolute;
-    text-decoration: none;
     text-transform: capitalize;
     transform: translateY(50%);
     width: calc(100% / 3);
@@ -70,7 +68,7 @@
 
 .header__button:hover .header__button-icon {
     animation: vertical-translate .8s ease infinite;
-    color: var(--neutral-accent-color);
+    color: var(--border-color);
     position: relative;
     top: -4px;
 }
@@ -83,6 +81,6 @@
 
 @keyframes border-color {
     100% {
-        border-color: var(--neutral-accent-color);
+        border-color: var(--border-color);
     }
 }

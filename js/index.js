@@ -21,6 +21,8 @@ const rightColumnValues = document.querySelectorAll(".exchange-table__second-col
 const rightColumnIcons = document.querySelectorAll(".exchange-table__second-column--icon");
 const tableFooter = document.querySelector("#exchange-table__footer");
 const tableFooterValue = document.querySelector("#exchange-table__footer-value");
+const plansCardContainer = document.querySelector("#plans-card-container");
+const plansCards = document.querySelectorAll(".plans-card");
 
 let tableIndex = 0;
 const tableData = [
@@ -47,6 +49,12 @@ const tableData = [
 ];
 
 leftArrow.style.visibility = "hidden";
+rightColumnIcons.forEach((img, index) => {
+  const {state} = tableData[0].data[index];
+  img.setAttribute("src", `./assets/icons/trending-${state}.svg`);
+  img.setAttribute("alt", `Trending ${state}`);
+});
+plansCardContainer.scrollTo(plansCardContainer.offsetWidth / 2, 0);
 
 const handleTableChange = (change) => {
   tableIndex += change;
@@ -95,5 +103,18 @@ const handleTableChange = (change) => {
   }
 };
 
+const handlePlanCardClick = (index) => {
+  const position =
+    index === 0
+      ? 0
+      : index === 1
+        ? plansCardContainer.offsetWidth / 2
+        : plansCardContainer.offsetWidth;
+  plansCardContainer.scrollTo(position, 0);
+};
+
 leftArrow.addEventListener("click", () => handleTableChange(-1));
 rightArrow.addEventListener("click", () => handleTableChange(1));
+plansCards.forEach((singleCard, index) => {
+  singleCard.addEventListener("click", () => handlePlanCardClick(index));
+});

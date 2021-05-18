@@ -15,7 +15,7 @@
 
 .exchange-table__arrow {
     align-self: center;
-    color: var(--accent-color);
+    color: var(--primary-text-color);
     font-size: 2rem;
     text-align: center;
 }
@@ -40,7 +40,7 @@
 }
 
 .exchange-table div {
-    background-color: var(--table-bg-color);
+    background-color: var(--contrast-color);
 }
 
 #exchange-table__header,
@@ -66,14 +66,14 @@
 }
 
 .exchange-table__first-column {
-    color: var(--neutral-accent-color);
+    color: var(--accent-color);
     font-size: 1.6rem;
     font-weight: 500;
     justify-content: start;
 }
 
 .exchange-table__second-column {
-    color: var(--accent-color);
+    color: var(--primary-text-color);
     font-weight: 700;
     font-size: 1.4rem;
     text-align: center;
@@ -88,7 +88,7 @@
     border-radius: 7.5px;
     font-size: 1.3rem;
     margin: auto;
-    padding: 5px 15px;
+    padding: 5px 10px;
     position: relative;
     width: max-content;
 }

@@ -20,45 +20,43 @@
 
 /* Both-Themes UI Colors */
 [app-theme="light"], [app-theme="dark"] {
-    --neutral-accent-color: var(--gray);
+    --accent-color: var(--gray);
     --table-currency-title-color: var(--main-orange);
     --table-currency-footer-bg-color: var(--soft-orange);
     --table-commission-title-color: var(--main-blue);
     --table-commission-footer-bg-color: var(--soft-blue);
+    --hero-text-shadow: var(--dark-gray);
+    --footer-bg-color: var(--main-orange);
+    --footer-color: var(--dark-white);
 }
 
 /* Light-Theme UI Colors */
 [app-theme="light"] {
-    --slider-border-color: var(--main-blue);
-    --header-bg-gradient: linear-gradient(190deg, var(--dark-white) 0%, var(--dark-white) 40%, var(--main-orange) 100%);
+    --primary-bg-color: var(--dark-white);
+    --primary-title-color: var(--black);
+    --primary-text-color: var(--dark-gray);
+    --border-color: var(--gray);
     --shadow-color: rgba(40, 38, 35, 0.25);
 
-    --primary-bg-color: var(--dark-white);
-    --secondary-bg-color: var(--soft-black);
-    --primary-title-color: var(--black);
-    --secondary-title-color: var(--white);
-    --primary-text-color: var(--dark-gray);
-    --secondary-text-color: var(--soft-gray);
-    --accent-color: var(--dark-gray);
-
-    --table-bg-color: var(--white);
-    --benefict-bg-opacity: 0.2;
+    --header-bg-gradient: linear-gradient(190deg, var(--dark-white) 0%, var(--dark-white) 40%, var(--main-orange) 100%);
+    --button-bg-color: var(--soft-black);
+    --contrast-color: var(--white);
+    --beneficts-card-bg-color: var(--soft-gray);
+    --beneficts-bg-opacity: 1;
 }
 
 /* Dark-Theme UI Colors */
 [app-theme="dark"] {
-    --slider-border-color: var(--main-orange);
-    --header-bg-gradient: linear-gradient(190deg, var(--soft-black) 0%, var(--soft-black) 40%, var(--main-orange) 100%);
-    --shadow-color: rgba(255, 196, 124, 0.25);
-
     --primary-bg-color: var(--soft-black);
-    --secondary-bg-color: var(--dark-white);
     --primary-title-color: var(--white);
-    --secondary-title-color: var(--black);
     --primary-text-color: var(--soft-gray);
-    --secondary-text-color: var(--dark-gray);
-    --accent-color: var(--soft-orange);
+    --border-color: var(--main-orange);
+    --shadow-color: rgba(255, 156, 25, 0.25);
 
-    --table-bg-color: var(--black);
-    --benefict-bg-opacity: 1;
+    --header-bg-gradient: linear-gradient(190deg, var(--soft-black) 0%, var(--soft-black) 40%, var(--main-orange) 100%);
+    --button-bg-color: var(--dark-white);
+    --contrast-color: var(--black);
+    --beneficts-card-bg-color: var(--dark-gray);
+    --beneficts-bg-opacity: 0.2;
+
 }
