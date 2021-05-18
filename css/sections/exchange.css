@@ -4,13 +4,8 @@
     width: 75%;
 }
 
-.exchange-table__container {
-    display: grid;
-    grid-template-columns: 20px auto 20px;
+.exchange-tables__wrapper {
 
-    margin: auto;
-    min-width: 275px;
-    width: 40%;
 }
 
 .exchange-table__arrow {
@@ -22,6 +17,15 @@
 
 .exchange-table__arrow::before {
     cursor: pointer;
+}
+
+.exchange-table__container {
+    display: grid;
+    grid-template-columns: 20px auto 20px;
+
+    margin: auto;
+    min-width: 275px;
+    width: 40%;
 }
 
 .exchange-table {
@@ -43,8 +47,8 @@
     background-color: var(--contrast-color);
 }
 
-#exchange-table__header,
-.exchange-table__first-column,
+[class ^= "exchange-table__header"],
+[class ^= "exchange-table__first-column"],
 .exchange-table__second-column {
     display: flex;
     align-items: center;
@@ -52,7 +56,7 @@
     padding: 0 10px;
 }
 
-#exchange-table__header {
+[class ^= "exchange-table__header"] {
     font-family: var(--primary-font);
     font-size: 1.8rem;
     font-weight: 700;
@@ -65,7 +69,7 @@
     color: var(--table-commission-title-color);
 }
 
-.exchange-table__first-column {
+[class ^= "exchange-table__first-column"] {
     color: var(--accent-color);
     font-size: 1.6rem;
     font-weight: 500;
@@ -79,12 +83,12 @@
     text-align: center;
 }
 
-.exchange-table img {
+.exchange-table__second-column img {
     height: 75%;
     margin-left: 10px;
 }
 
-#exchange-table__footer {
+[class ^= "exchange-table__footer"] {
     border-radius: 7.5px;
     font-size: 1.3rem;
     margin: auto;
@@ -97,4 +101,9 @@
 }
 .exchange-table__footer--commission {
     background-color: var(--table-commission-footer-bg-color);
+}
+
+#exchange-second-table {
+    height: 0;
+    visibility: collapse;
 }

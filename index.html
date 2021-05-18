@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/queries/tablet.css" media="(min-width: 750px)">
+    <link rel="stylesheet" href="./css/queries/desktop.css" media="(min-width: 1200px)">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -46,37 +48,70 @@
                     Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.
                 </p>
             </div>
-            <section class="exchange-table__container">
-                <i id="table-left-arrow" class="fas fa-chevron-left exchange-table__arrow"></i>
-                <div class="exchange-table">
-                    <div id="exchange-table__header" class="exchange-table__header--currency">Monedas</div>
-                    <div class="exchange-table__first-column">Bitcoin</div>
-                    <div class="exchange-table__second-column">
-                        $&nbsp<span class="exchange-table__second-column--value">1.96</span>
-                        <img class="exchange-table__second-column--icon">
-                    </div>
-                    <div class="exchange-table__first-column">Ethereum</div>
-                    <div class="exchange-table__second-column">
-                        $&nbsp<span class="exchange-table__second-column--value">0.07</span>
-                        <img class="exchange-table__second-column--icon">
-                    </div>
-                    <div class="exchange-table__first-column">Ripple</div>
-                    <div class="exchange-table__second-column">
-                        $&nbsp<span class="exchange-table__second-column--value">2.15</span>
-                        <img class="exchange-table__second-column--icon">
-                    </div>
-                    <div class="exchange-table__first-column">Stellar</div>
-                    <div class="exchange-table__second-column">
-                        $&nbsp<span class="exchange-table__second-column--value">4.96</span>
-                        <img class="exchange-table__second-column--icon">
+            <section class="exchange-tables__wrapper">
+                <div id="exchange-first-table">
+                    <article class="exchange-table__container">
+                        <i id="table-left-arrow" class="fas fa-chevron-left exchange-table__arrow"></i>
+                        <div class="exchange-table">
+                            <div id="exchange-table__header" class="exchange-table__header--currency">Monedas</div>
+                            <div class="exchange-table__first-column">Bitcoin</div>
+                            <div class="exchange-table__second-column">
+                                $&nbsp<span class="exchange-table__second-column--value">1.96</span>
+                                <img class="exchange-table__second-column--icon">
+                            </div>
+                            <div class="exchange-table__first-column">Ethereum</div>
+                            <div class="exchange-table__second-column">
+                                $&nbsp<span class="exchange-table__second-column--value">0.07</span>
+                                <img class="exchange-table__second-column--icon">
+                            </div>
+                            <div class="exchange-table__first-column">Ripple</div>
+                            <div class="exchange-table__second-column">
+                                $&nbsp<span class="exchange-table__second-column--value">2.15</span>
+                                <img class="exchange-table__second-column--icon">
+                            </div>
+                            <div class="exchange-table__first-column">Stellar</div>
+                            <div class="exchange-table__second-column">
+                                $&nbsp<span class="exchange-table__second-column--value">4.96</span>
+                                <img class="exchange-table__second-column--icon">
+                            </div>
+                        </div>
+                        <i id="table-right-arrow" class="fas fa-chevron-right exchange-table__arrow"></i>
+                    </article>
+                    <div id="exchange-table__footer" class="exchange-table__footer--currency">
+                        <b>Actualizado:</b>
+                        <span id="exchange-table__footer-value">19 Julio 23:45</span>
                     </div>
                 </div>
-                <i id="table-right-arrow" class="fas fa-chevron-right exchange-table__arrow"></i>
+                <div id="exchange-second-table">
+                    <article class="exchange-table__container">
+                        <i id="table-left-arrow" class="fas fa-chevron-left exchange-table__arrow"></i>
+                        <div class="exchange-table">
+                            <div class="exchange-table__header--commission">Comisiones</div>
+                            <div class="exchange-table__first-column--1">Bitrade</div>
+                            <div class="exchange-table__second-column">
+                                $&nbsp<span class="exchange-table__second-column--value-1">12.96</span>
+                            </div>
+                            <div class="exchange-table__first-column--1">Bitpreco</div>
+                            <div class="exchange-table__second-column">
+                                $&nbsp<span class="exchange-table__second-column--value-1">13.07</span>
+                            </div>
+                            <div class="exchange-table__first-column--1">Novadax</div>
+                            <div class="exchange-table__second-column">
+                                $&nbsp<span class="exchange-table__second-column--value-1">13.15</span>
+                            </div>
+                            <div class="exchange-table__first-column--1">Coinext</div>
+                            <div class="exchange-table__second-column">
+                                $&nbsp<span class="exchange-table__second-column--value-1">14.96</span>
+                            </div>
+                        </div>
+                        <i id="table-right-arrow" class="fas fa-chevron-right exchange-table__arrow"></i>
+                    </article>
+                    <div class="exchange-table__footer--commission">
+                        <b>Actualizado:</b>
+                        <span id="exchange-table__footer-value-1">19 Julio 23:45</span>
+                    </div>
+                </div>
             </section>
-            <div id="exchange-table__footer" class="exchange-table__footer--currency">
-                <b>Actualizado:</b>
-                <span id="exchange-table__footer-value">19 Julio 23:45</span>
-            </div>
         </section>
         <section id="beneficts" class="main-section">
             <span class="beneficts-separator__container">

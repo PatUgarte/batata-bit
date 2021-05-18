@@ -1,0 +1,49 @@
+/* Exchanges */
+
+.exchange-table__arrow {
+    visibility: collapse;
+}
+
+.exchange-tables__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin: auto;
+    width: 90%;
+}
+
+.exchange-table__container {
+    width: 90%;
+}
+
+#exchange-first-table,
+#exchange-second-table {
+    justify-self: center;
+    width: 100%;
+}
+
+#exchange-second-table {
+    height: auto;
+    visibility: visible;
+}
+
+/* Beneficts */
+
+.beneficts-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.beneficts-card {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 450px;
+    width: 45%;
+}
+
+/* Plans */
+
+.plans-card__container {
+    overflow-x: visible;
+    width: 90%;
+}

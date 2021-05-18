@@ -1,0 +1,22 @@
+/* Exchanges */
+
+.exchange-tables__wrapper {
+    margin: auto;
+    width: 75%;
+}
+
+.exchange-table__container {
+    width: 80%;
+}
+
+/* Beneficts */
+
+.beneficts-card {
+    max-width: 350px;
+}
+
+/* Plans */
+
+.plans-card__container {
+    width: 75%;
+}
