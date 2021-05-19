@@ -21,6 +21,11 @@
     font-weight: 500;
 }
 
+.footer-links__item:hover {
+    text-decoration: underline;
+    font-weight: 900;
+}
+
 .footer-links__logo {
     height: 15vw;
     max-height: 60%;

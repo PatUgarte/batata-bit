@@ -28,16 +28,21 @@
 
 /* Beneficts */
 
+.beneficts__titles {
+    margin-bottom: 40px;
+}
+
 .beneficts-card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 0 10%;
 }
 
 .beneficts-card {
-    margin-left: 0;
-    margin-right: 0;
-    max-width: 450px;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 500px;
     width: 45%;
 }
 
@@ -46,4 +51,10 @@
 .plans-card__container {
     overflow-x: visible;
     width: 90%;
+}
+
+/* Footer */
+
+#footer {
+    justify-content: space-around;
 }

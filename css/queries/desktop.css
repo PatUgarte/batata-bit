@@ -1,8 +1,62 @@
+/* General */
+
+.section__titles h2 {
+    font-size: 3rem;
+}
+
+.section__titles p {
+    font-size: 2rem;
+}
+
+/* Header */
+
+.header__logo {
+    margin: 0;
+}
+
+.header__title {
+    font-size: 3.5rem;
+}
+
+.header__subtitle {
+    font-size: 2.3rem;
+}
+
 /* Exchanges */
 
-.exchange-tables__wrapper {
+#exchange {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 120px;
+}
+
+.exchange-header__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: 100%;
     margin: auto;
-    width: 75%;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+.exchange__titles {
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.exchange__bg-img {
+    width: 60%;
+    max-width: 400px;
+}
+
+.exchange-tables__wrapper {
+    row-gap: 25px;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, 50%);
+    margin: auto;
+    width: 90%;
 }
 
 .exchange-table__container {
@@ -11,12 +65,55 @@
 
 /* Beneficts */
 
+#beneficts {
+    padding: 80px 0;
+}
+
+.beneficts-card-container {
+    padding: 0;
+}
+
 .beneficts-card {
-    max-width: 350px;
+    height: auto;
+    max-height: none;
+    min-width: 0;
+    width: 22%;
 }
 
 /* Plans */
 
+.plans-hero {
+    height: 50vh;
+}
+
+.plans-hero__text {
+    font-size: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    text-shadow: 5px 5px var(--hero-text-shadow);
+    height: 100%;
+    width: 100%;
+}
+
 .plans-card__container {
     width: 75%;
+}
+
+/* Footer */
+
+#footer {
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.footer-links {
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+.footer-links__item {
+    margin-right: 15%;
 }
