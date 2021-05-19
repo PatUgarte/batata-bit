@@ -23,6 +23,7 @@ const tableFooter = document.querySelector("#exchange-table__footer");
 const tableFooterValue = document.querySelector("#exchange-table__footer-value");
 const plansCardContainer = document.querySelector("#plans-card-container");
 const plansCards = document.querySelectorAll(".plans-card");
+const exchangeSecondTable = document.querySelector("#exchange-second-table");
 
 let tableIndex = 0;
 const tableData = [
@@ -56,8 +57,8 @@ rightColumnIcons.forEach((img, index) => {
 });
 plansCardContainer.scrollTo(plansCardContainer.offsetWidth / 2, 0);
 
-const handleTableChange = (change) => {
-  tableIndex += change;
+const handleTableChange = (index) => {
+  tableIndex = index;
   const currentData = tableData[tableIndex];
 
   tableHeaderValue.innerHTML = currentData.type;
@@ -113,8 +114,42 @@ const handlePlanCardClick = (index) => {
   plansCardContainer.scrollTo(position, 0);
 };
 
-leftArrow.addEventListener("click", () => handleTableChange(-1));
+let previousWidth = 0;
+const reportWindowSize = () => {
+  const width = window.innerWidth;
+  if (width >= 750) {
+    tableIndex = 0;
+    leftArrow.style.visibility = "hidden";
+    rightArrow.style.visibility = "hidden";
+    const data = tableData[0];
+    tableHeaderValue.innerHTML = data.type;
+    tableHeaderValue.classList.replace(
+      "exchange-table__header--commission",
+      "exchange-table__header--currency"
+    );
+    leftColumnValues.forEach((leftContent, index) => {
+      leftContent.innerHTML = data.data[index].name;
+    });
+    rightColumnValues.forEach((rightContent, index) => {
+      rightContent.innerHTML = data.data[index].value;
+    });
+    rightColumnIcons.forEach((img) => {
+      img.style.visibility = "visible";
+    });
+    tableFooterValue.innerHTML = data.updatedAt;
+    tableFooter.classList.replace(
+      "exchange-table__footer--commission",
+      "exchange-table__footer--currency"
+    );
+  } else if (previousWidth && previousWidth >= 750 && width < 750) {
+    rightArrow.style.visibility = "visible";
+  }
+  previousWidth = window.innerWidth;
+};
+
+leftArrow.addEventListener("click", () => handleTableChange(0));
 rightArrow.addEventListener("click", () => handleTableChange(1));
 plansCards.forEach((singleCard, index) => {
   singleCard.addEventListener("click", () => handlePlanCardClick(index));
 });
+window.addEventListener("resize", reportWindowSize);

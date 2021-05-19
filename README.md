@@ -5,5 +5,5 @@ This project was inspired by [the following Platzi's Course](https://platzi.com/
 
 - [Original Figma design for this project.](https://www.figma.com/file/sMmlQaZldfDcLERYYWe6h4/Bata-Bit?node-id=83%3A132)
 
-### You can see the project publish with GitHub Pages: 
-- **[https://patugarte.github.io/batata-bit/](https://patugarte.github.io/batata-bit/)**
+### You can see the project published with _GitHub Pages_:
+**[https://patugarte.github.io/batata-bit/](https://patugarte.github.io/batata-bit/)**
