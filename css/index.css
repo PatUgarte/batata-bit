@@ -6,17 +6,18 @@
 @import './sections/plans.css';
 @import './sections/footer.css';
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-}
-
 html {
+    box-sizing: border-box;
     font-family: var(--primary-font);
     font-size: 62.5%;
     min-width: 320px;
+    scroll-behavior: smooth;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 a {
